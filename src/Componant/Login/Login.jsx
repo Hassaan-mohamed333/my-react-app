@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import style from "./Login.module.css";
+import styles from './login.module.css';
+
 import { UNSAFE_getTurboStreamSingleFetchDataStrategy } from 'react-router-dom'
 
 export default function Login() {
