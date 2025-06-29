@@ -6,7 +6,7 @@ import Layout from './Componant/Layout/Layout';
 import Home from './Componant/Home/Home';
 import About from './Componant/About/About';
 import Brands from './Componant/Brands/Brands';
-import Login from './Componant/Login/login';
+import Login from './Componant/Login/Login';
 import Cart from './Componant/Cart/Cart';
 import Register from './Componant/Register/Register';
 import Product from './Componant/Products/Products';
