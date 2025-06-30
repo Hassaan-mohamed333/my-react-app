@@ -24,7 +24,7 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        { index: true, element: <Home/> },
+        { index: true, element: <Home /> },
         { path: "Login", element: <Login /> },
         { path: "cart", element: <Cart /> },
         { path: "about", element: <About /> },
