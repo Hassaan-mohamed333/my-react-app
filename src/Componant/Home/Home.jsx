@@ -1,5 +1,6 @@
 import React from 'react'
 import { UNSAFE_getTurboStreamSingleFetchDataStrategy } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
   return (

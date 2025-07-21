@@ -15,7 +15,7 @@ export default function Navbar() {
           </div>
           <div className="hidden sm:block sm:ml-6">
             <div className="flex space-x-4">
-              <NavLink to='/Home '  className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium">Home</NavLink >
+              <NavLink to='/Home'  className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium">Home</NavLink >
               {/* Products Dropdown Trigger */}
               <div className="relative group">
                 <button className="text-gray-900 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium flex items-center bg-transparent">
@@ -123,9 +123,9 @@ export default function Navbar() {
             <a href="#" className="block w-full text-center text-gray-900 bg-gray-100 px-3 py-2 rounded-md text-base font-medium">
               Login
             </a>
-            <a href="#" className="block w-full text-center bg-indigo-600 text-white px-3 py-2 rounded-md text-base font-medium">
+            <NavLink to='/Login' href="#" className="block w-full text-center bg-indigo-600 text-white px-3 py-2 rounded-md text-base font-medium">
               Sign Up
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
