@@ -5,13 +5,24 @@ import { Formik, useFormik } from 'formik';
 import axios from 'axios';
 
 
-async function submitForm(val) {
+
+
+export default function Register() {
+    // const [counter, setCounter] = useState(0); 
+    async function submitForm(val) {
   let {data} = await axios.post("https://linked-posts.routemisr.com/users/signup",val)
-  console.log(data)
+  console.log(data);
   
 }
-export default function Register() {
-    const [counter, setCounter] = useState(0); 
+function validateInput(values){
+  let errors=();
+  is (!/^[a-zA-Z ]+$/values.name=="")
+  errors.push("name is required");
+  
+}
+else if (/values.name==){
+  errors.push("email is required");
+}
 let formik = useFormik({
   initialValues: {    
     name: "",    
@@ -24,7 +35,9 @@ let formik = useFormik({
     console.log(values);
   },
 })
-    useEffect
+   useEffect(() => {
+  // كود التأثير هنا
+}, []);
   return <>
  <div className="bg-gray-100 flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
   <div className="w-full max-w-md space-y-8">
